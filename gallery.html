@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея картинок - Культурні події світу</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Common styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Встановлюємо мінімальну висоту вікна */
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo img {
+            max-width: 120px;
+            height: auto;
+        }
+        
+        .nav-link {
+            color: white;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #ffeb3b;
+        }
+        
+        /* Main content styles */
+        main {
+            flex: 1; /* Займає всю доступну висоту, щоб зайти нижче header */
+            padding: 20px;
+        }
+        
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex flex-column align-items-center p-3">
+        <div class="logo mb-3">
+            <img src="file:///C:/Users/yevhe/OneDrive/Desktop/Снимок%20экрана%202024-06-13%20205645.png" alt="Логотип">
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">Про сайт</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Галерея картинок</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="news.html">Новини</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container my-4">
+        <h2 class="text-center">Галерея картинок</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://kdidpmid.edu.ua/academy/wp-content/uploads/2023/06/1686563007408.jpg" class="img-fluid" alt="Gallery 1">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://kdidpmid.edu.ua/academy/wp-content/uploads/2023/06/1686563007473.jpg" class="img-fluid" alt="Gallery 2">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://kdidpmid.edu.ua/academy/wp-content/uploads/2023/06/1686563007456.jpg" class="img-fluid" alt="Gallery 3">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://www.moma.org/d/c/installation_images/W1siZiIsIjM3MjUzMCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=142a0056d9609a28" class="img-fluid" alt="Gallery 4">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://www.moma.org/d/c/installation_images/W1siZiIsIjQyNzU3NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=e136e1048acd2625" class="img-fluid" alt="Gallery 5">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://www.moma.org/d/c/installation_images/W1siZiIsIjM3MjUzMCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=142a0056d9609a28" class="img-fluid" alt="Gallery 6">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://kdidpmid.edu.ua/academy/wp-content/uploads/2023/06/1686563007361.jpg" class="img-fluid" alt="Gallery 7">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://cdn.thecrazytourist.com/wp-content/uploads/2021/01/Robert-Frances-Fullerton-Museum-of-Art-1024x732.jpg" class="img-fluid" alt="Gallery 8">
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </main>
+    
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Культурні події світу</p>
+    </footer>
+</body>
+</html>
