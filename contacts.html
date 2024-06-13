@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Культурні події світу</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Common styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #28a745; /* Зелений колір для заголовку */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo img {
+            max-width: 120px;
+            height: auto;
+        }
+        
+        .nav-link {
+            color: white;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #ffc107;
+        }
+        
+        /* Main content styles */
+        main {
+            padding: 20px;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #28a745; /* Зелений колір для футера */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /* Form styles */
+        .form-control {
+            background-color: #ffffff; /* Білий колір для полів вводу */
+            color: #333; /* Темний текст для полів вводу */
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        
+        address {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex flex-column align-items-center p-3">
+        <div class="logo mb-3">
+            <img src="file:///C:/Users/yevhe/OneDrive/Desktop/Снимок%20экрана%202024-06-13%20205645.png" alt="Логотип">
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">Про сайт</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Галерея картинок</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="news.html">Новини</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container my-4">
+        <h2>Контакти</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Ім'я</label>
+                        <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Введіть ваш email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Повідомлення</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Введіть ваше повідомлення"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Відправити</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <address>
+                    <strong>Адреса:</strong> м. Полтава, просп. Першотравневий, 29<br>
+                    <strong>Телефон:</strong> +380 68 340 7606<br>
+                    <strong>Email:</strong> eugene.shishkovsky@gmail.com
+                </address>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Культурні події світу</p>
+    </footer>
+</body>
+</html>
