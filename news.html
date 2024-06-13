@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини - Культурні події світу</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Common styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Встановлюємо мінімальну висоту вікна */
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo img {
+            max-width: 120px;
+            height: auto;
+        }
+        
+        .nav-link {
+            color: white;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #ffeb3b;
+        }
+        
+        /* Main content styles */
+        main {
+            flex: 1; /* Займає всю доступну висоту, щоб зайти нижче header */
+            padding: 20px;
+        }
+        
+        .news-item {
+            margin-top: 30px;
+        }
+        
+        .news-title {
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+        }
+        
+        .news-content {
+            font-size: 18px;
+            color: #555;
+            text-align: justify;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex flex-column align-items-center p-3">
+        <div class="logo mb-3">
+            <img src="file:///C:/Users/yevhe/OneDrive/Desktop/Снимок%20экрана%202024-06-13%20205645.png" alt="Логотип">
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">Про сайт</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Галерея картинок</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="news.html">Новини</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container my-4">
+        <div class="text-center mb-4">
+            <h2>Новини</h2>
+        </div>
+        
+        <div id="news1" class="news-item">
+            <h3 class="news-title">Нова Виставка "Світло та Тінь"</h3>
+            <div class="news-content">
+                <p><strong>Український Національний Музей, Львів:</strong> З 10 червня до 10 липня у Львівському національному музеї пройде захоплююча виставка "Світло та Тінь", що присвячена взаємодії світла та тіні в сучасному мистецтві.</p>
+                <p><strong>Куратор:</strong> Юлія Соколова. Куратор виставки, Юлія Соколова, розповіла про мету проекту: "Ця виставка запрошує глядача на подорож у світ світла та тіні, де кожен експонат – це окрема історія та відкриття для розуміння величі мистецтва".</p>
+                <p><strong>Пошук Співавторів:</strong> Організатори виставки активно шукають співавторів та партнерів для подальшого розвитку проекту. Якщо ви зацікавлені, зв'яжіться з оргкомітетом.</p>
+            </div>
+        </div>
+        
+        <div id="news2" class="news-item">
+            <h3 class="news-title">Мистецький Фестиваль "Творчий Космос"</h3>
+            <div class="news-content">
+                <p><strong>Музей Сучасного Мистецтва, Нью-Йорк:</strong> З 20 липня по 5 серпня відбудеться масштабний мистецький фестиваль "Творчий Космос", присвячений дослідженню космосу через призму мистецтва та культури.</p>
+                <p><strong>Виступи та Майстер-класи:</strong> Фестиваль обіцяє захоплюючі виступи від світових зірок мистецтва та культури, а також безліч майстер-класів для всіх охочих долучитися до творчого процесу.</p>
+                <p><strong>Участь:</strong> Усі бажаючі можуть взяти участь у фестивалі</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Культурні події світу</p>
+    </footer>
+</body>
+</html>
